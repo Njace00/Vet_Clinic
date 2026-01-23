@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hachikate - Veterinary Clinic</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="sidebar-toggle">
+            <button></button>
+        </div>
+        <div class="logo">
+            <img src="" alt="Hachikate">
+            <span>Hachikate</span>
+            <span>Veterinary Clinic</span>
+        </div>
+        <div class="search-bar">
+            <input type="search" placeholder="Search">
+        </div>
+        <div class="user-profile">
+            <span>Dr. Genina</span>
+            <img src="" alt="Profile">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1>Welcome Back, Dr. Genina!!</h1>
+            <p>Monday, December 23, 2025 - Here's what's happening today</p>
+        </section>
+
+        <!-- Status Bars -->
+        <div class="status-bars">
+            <div class="status-bar primary"></div>
+            <div class="status-bar secondary"></div>
+        </div>
+
+        <!-- Dashboard Stats -->
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Today's Appointments</span>
+                    <button class="icon-btn"></button>
+                </div>
+                <div class="stat-value">69</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Active Patients</span>
+                    <button class="icon-btn"></button>
+                </div>
+                <div class="stat-value">69</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Today's Appointments</span>
+                    <button class="icon-btn"></button>
+                </div>
+                <div class="stat-value">69</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Pending Check-ins</span>
+                    <button class="icon-btn"></button>
+                </div>
+                <div class="stat-value">67</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Inventory Reminders</span>
+                    <button class="icon-btn"></button>
+                </div>
+                <div class="stat-value">5</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span>Pending Check-ins</span>
+                    <button class="icon-btn"></button>
+                </div>
+                <div class="stat-value">67</div>
+            </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="action-buttons">
+            <button class="btn btn-appointment">
+                <span>Appointment</span>
+                <span class="icon"></span>
+            </button>
+            <button class="btn btn-reminder">
+                <span>Send Reminder</span>
+                <span class="icon"></span>
+            </button>
+            <button class="btn btn-inventory">
+                <span>Update Inventory</span>
+                <span class="icon"></span>
+            </button>
+        </section>
+
+        <!-- Dynamic Content Area (Changes based on active view) -->
+        <section class="content-area">
+            
+            <!-- View 1: Patient List with Actions -->
+            <div class="patient-list-view">
+                <ul class="patient-list">
+                    <li class="patient-item">
+                        <div class="patient-avatar"></div>
+                        <div class="patient-info">
+                            <span class="owner-name">Owner Name</span>
+                            <span class="pet-name">Pet Name</span>
+                        </div>
+                        <div class="patient-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-done">Done</button>
+                        </div>
+                    </li>
+                    <li class="patient-item">
+                        <div class="patient-avatar"></div>
+                        <div class="patient-info">
+                            <span class="owner-name">Owner Name</span>
+                            <span class="pet-name">Pet Name</span>
+                        </div>
+                        <div class="patient-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-done">Done</button>
+                        </div>
+                    </li>
+                    <li class="patient-item">
+                        <div class="patient-avatar"></div>
+                        <div class="patient-info">
+                            <span class="owner-name">Owner Name</span>
+                            <span class="pet-name">Pet Name</span>
+                        </div>
+                        <div class="patient-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-done">Done</button>
+                        </div>
+                    </li>
+                    <li class="patient-item">
+                        <div class="patient-avatar"></div>
+                        <div class="patient-info">
+                            <span class="owner-name">Owner Name</span>
+                            <span class="pet-name">Pet Name</span>
+                        </div>
+                        <div class="patient-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-done">Done</button>
+                        </div>
+                    </li>
+                    <li class="patient-item">
+                        <div class="patient-avatar"></div>
+                        <div class="patient-info">
+                            <span class="owner-name">Owner Name</span>
+                            <span class="pet-name">Pet Name</span>
+                        </div>
+                        <div class="patient-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-done">Done</button>
+                        </div>
+                    </li>
+                    <li class="patient-item">
+                        <div class="patient-avatar"></div>
+                        <div class="patient-info">
+                            <span class="owner-name">Owner Name</span>
+                            <span class="pet-name">Pet Name</span>
+                        </div>
+                        <div class="patient-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-done">Done</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="bottom-actions">
+                    <button class="btn btn-schedule">Schedule Appointment</button>
+                    <button class="btn btn-add-patient">Add Patient</button>
+                </div>
+            </div>
+
+            <!-- View 2: Patient Details Form -->
+            <div class="patient-details-view">
+                <div class="patient-profile">
+                    <img src="" alt="Patient Avatar" class="patient-avatar-large">
+                    <div class="patient-details-form">
+                        <div class="form-field">
+                            <label>Patient's Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-field">
+                            <label>Type</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-field">
+                            <label>Breed</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-field">
+                            <label>Age</label>
+                            <input type="text">
+                        </div>
+                        <button class="btn btn-submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View 3: Schedule Appointment / Calendar -->
+            <div class="calendar-view">
+                <div class="calendar-header">
+                    <button class="nav-btn prev"></button>
+                    <span class="month-year">December 2025</span>
+                    <button class="nav-btn next"></button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-days">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>T</span>
+                        <span>W</span>
+                        <span>T</span>
+                        <span>F</span>
+                        <span>S</span>
+                    </div>
+                    <div class="calendar-dates">
+                        <!-- Calendar date cells would go here -->
+                    </div>
+                </div>
+                <div class="appointment-form">
+                    <div class="form-field">
+                        <label>Client Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Pet Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Client's Pet Number</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Select for Appointment</label>
+                        <select></select>
+                    </div>
+                    <button class="btn btn-submit">Submit</button>
+                </div>
+            </div>
+
+            <!-- View 4: Send Reminder -->
+            <div class="reminder-view">
+                <div class="reminder-form">
+                    <div class="form-field">
+                        <label>Patient's Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Client's Phone No.</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Message Title</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                    <button class="btn btn-submit">Submit</button>
+                </div>
+
+                <div class="client-list">
+                    <div class="notifications-header">Hachikate Staff</div>
+                    <ul>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                        <li class="client-item">
+                            <div class="client-avatar"></div>
+                            <div class="client-info">
+                                <span class="client-name">Client's Name</span>
+                                <span class="client-breed">Client's dog and Pet's Breed</span>
+                            </div>
+                            <button class="icon-btn"></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="message-history">
+                    <div class="message-item">
+                        <div class="message-icon"></div>
+                        <div class="message-content">
+                            <strong>Sent to (client's name)</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <button class="icon-btn"></button>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-icon"></div>
+                        <div class="message-content">
+                            <strong>Sent to (client's name)</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <button class="icon-btn"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View 5: Update Inventory -->
+            <div class="inventory-view">
+                <div class="inventory-form">
+                    <div class="form-field">
+                        <label>Item Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Item ID</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-field">
+                        <label>Quantity</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-field">
+                        <label>Expiration Date</label>
+                        <input type="date">
+                    </div>
+                    <button class="btn btn-add">Add</button>
+                </div>
+
+                <div class="inventory-sections">
+                    <div class="inventory-tabs">
+                        <button class="tab active">INVENTORY ITEMS</button>
+                        <button class="tab">HISTORY RECORDS</button>
+                    </div>
+
+                    <div class="inventory-items">
+                        <ul>
+                            <li class="inventory-item">
+                                <div class="item-icon"></div>
+                                <div class="item-info">
+                                    <span class="item-name">Item Name</span>
+                                    <span class="item-id">Item ID</span>
+                                </div>
+                                <span class="item-quantity">Quantity: 23</span>
+                                <button class="icon-btn"></button>
+                            </li>
+                            <li class="inventory-item">
+                                <div class="item-icon"></div>
+                                <div class="item-info">
+                                    <span class="item-name">Item Name</span>
+                                    <span class="item-id">Item ID</span>
+                                </div>
+                                <span class="item-quantity">Quantity: 15</span>
+                                <button class="icon-btn"></button>
+                            </li>
+                            <li class="inventory-item">
+                                <div class="item-icon"></div>
+                                <div class="item-info">
+                                    <span class="item-name">Item Name</span>
+                                    <span class="item-id">Item ID</span>
+                                </div>
+                                <span class="item-quantity">Quantity: 21</span>
+                                <button class="icon-btn"></button>
+                            </li>
+                            <li class="inventory-item">
+                                <div class="item-icon"></div>
+                                <div class="item-info">
+                                    <span class="item-name">Item Name</span>
+                                    <span class="item-id">Item ID</span>
+                                </div>
+                                <span class="item-quantity">Quantity: 7</span>
+                                <button class="icon-btn"></button>
+                            </li>
+                            <li class="inventory-item">
+                                <div class="item-icon"></div>
+                                <div class="item-info">
+                                    <span class="item-name">Item Name</span>
+                                    <span class="item-id">Item ID</span>
+                                </div>
+                                <span class="item-quantity">Quantity: 8</span>
+                                <button class="icon-btn"></button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="history-records">
+                        <ul>
+                            <li class="history-item">
+                                <div class="history-icon"></div>
+                                <span>5 (item name) has been added to inventory</span>
+                            </li>
+                            <li class="history-item">
+                                <div class="history-icon"></div>
+                                <span>2 (item name) has been added to inventory</span>
+                            </li>
+                            <li class="history-item">
+                                <div class="history-icon"></div>
+                                <span>3 (item name) has been added to inventory</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="inventory-actions">
+                        <button class="btn btn-edit">Edit</button>
+                        <button class="btn btn-delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Reminders Section -->
+        <section class="reminders-section">
+            <div class="reminders-header">
+                <span class="icon"></span>
+                <span>Today's Reminders</span>
+            </div>
+            <div class="reminder-cards">
+                <div class="reminder-card">
+                    <div class="reminder-icon"></div>
+                    <h3>Reminder</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="reminder-card">
+                    <div class="reminder-icon"></div>
+                    <h3>Reminder</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="reminder-card">
+                    <div class="reminder-icon"></div>
+                    <h3>Reminder</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
