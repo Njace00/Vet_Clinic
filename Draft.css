@@ -1,0 +1,323 @@
+
+:root {
+  --primary-color: #1e3a8a;     
+  --secondary-color: #f97316;   
+  --accent-color: #3b82f6;      
+  --light-bg: #f9fafb;          
+  --card-bg: #ffffff;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --border-radius: 10px;
+  --shadow-small: 0 2px 5px rgba(0,0,0,0.1);
+  --shadow-large: 0 4px 10px rgba(0,0,0,0.1);
+  --font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-bg);
+  margin: 0;
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: var(--shadow-small);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.logo span:first-of-type {
+  font-size: 1.1rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+
+.welcome-section {
+  background: var(--card-bg);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  margin: 1rem;
+  box-shadow: var(--shadow-small);
+}
+
+.welcome-section h1 {
+  font-size: 1.5rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.welcome-section p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+
+.status-bars {
+  background: var(--secondary-color);
+  height: 10px;
+  border-radius: var(--border-radius);
+  margin: 1rem;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-small);
+  padding: 1rem;
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-light);
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
+}
+
+
+.action-buttons {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.btn {
+  flex: 1;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.btn-appointment {
+  background: var(--secondary-color);
+}
+
+.btn-reminder,
+.btn-inventory {
+  background: var(--primary-color);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.patient-list {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--card-bg);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-small);
+}
+
+.patient-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.patient-info {
+  flex: 1;
+  margin-left: 0.8rem;
+}
+
+.owner-name {
+  font-weight: 600;
+  display: block;
+}
+
+.pet-name {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.patient-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.patient-actions .btn-view {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.patient-actions .btn-done {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+
+.bottom-actions {
+  display: flex;
+  margin: 1rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.btn-schedule {
+  flex: 2;
+  background: var(--primary-color);
+}
+
+.btn-add-patient {
+  flex: 1;
+  background: var(--secondary-color);
+}
+
+
+.patient-details-view {
+  background: var(--card-bg);
+  margin: 1rem;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow-small);
+}
+
+.patient-details-form {
+  display: grid;
+  gap: 0.6rem;
+  width: 60%;
+  margin: auto;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  padding: 0.6rem;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+}
+
+.btn-submit {
+  background: var(--secondary-color);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.reminders-section {
+  margin: 1rem;
+}
+
+.reminders-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.reminder-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background: var(--card-bg);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--shadow-small);
+}
+
+.reminder-card {
+  padding: 1rem;
+  border-right: 1px solid #eee;
+}
+
+.reminder-card:last-child {
+  border-right: none;
+}
+
+.reminder-card h3 {
+  margin-top: 0.2rem;
+  color: var(--secondary-color);
+}
+
+.reminder-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
